@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="background_styles.css">
+      <link rel="stylesheet" href="styles.css">
+      <title>Falcon</title>
+      <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+      
+    </head>
+    <body>
+      
+        
+      <div class="background_video"> 
+        <video autoplay loop muted>
+          <source src="images/background_video.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="pg1tit">
+        FALCON
+      </div>
+
+        
+      <header class="header header-scrolled">
+          
+        <a href="#"><img src="images/logored.png" class="logo"></a>
+        <button class="openbtn" onclick="openNav()">Menu</button>  
+          
+          
+      </header>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#abtus">About Us</a>
+        <a href="#whatweoffer">What We Offer</a>
+        <a href="#whyus">Why Choose Us</a>
+        <a href="#cnt">Contact</a>
+      </div>
+      
+      <section>
+        <div class="containter reveal">
+          <div class="intro">
+            <p>
+              Falcon Ventures Ltd, est. 2018, mines high-grade Manganese and chromium ores, prioritizing quality, eco-friendly practices, and community development.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class = "container1 reveal">
+          <div class = "whatweoffer" id="whatweoffer">
+            <H2>What We Offer</H2>
+          </div>
+          <div class = "imges">
+            <div class = "manganeseore">
+              <a href="#">
+                <img src="images/manganese ore.png" width="250px" height="auto">
+              </a>
+              <h2>Manganese Ore</h2>
+            </div>
+            <div class = "chromiumore">
+              <a href="#">
+                <img src="images/chromium ore.png" width="300px" height="auto">
+              </a>  
+              <h2>Chromium Ore</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class = "whyushead reveal" id="whyus" >
+          <h2>Why Choose Us <span style="color:#E21E25">?</span></h2>
+        </div>
+        <div class = "card-container">
+          <div class = "card reveal">
+            <img src="images/Frame 5.png" width="400px" height="auto">
+          </div>
+          <div class = "card reveal">
+            <img src="images/Frame 6.png" width="400px" height="auto">
+          </div>
+          <div class = "card reveal">
+            <img src="images/Frame 8.png" width="400px" height="auto">
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class = "abtushead reveal" id="abtus">
+          <h2>About <span style="color:#E21E25">Us</span></h2>
+        </div>
+        <div class = "abtuspara reveal">
+          <p>
+            Incorporated in 2018, <span style="color:#E21E25">Falcon Ventures Limited (FVL) </span>operates with a strong passion and entrepreneurial spirit in mining, mineral exports, logistics, and infrastructure development. Managed by a highly qualified and experienced team, <span style="color:#E21E25">FVL</span> specializes in mining high and medium grade manganese ores (42% to 50%+), ensuring quality through stringent sorting and segregating practices that meet global standards. Equipped with in-house facilities for sampling, sample preparation, wet analysis labs, and XRF technology, <span style="color:#E21E25">FVL</span> caters to the needs of Ferro Manganese smelters, Silica Manganese smelters, Electrolytic Manganese Dioxide manufacturers, and chemical industries. Committed to sustainable development and environmental responsibility, <span style="color:#E21E25">FVL</span> employs conscientious mining practices. Since its establishment, <span style="color:#E21E25">FVL</span> has consistently delivered quality ores with reliable on-time delivery. Additionally, <span style="color:#E21E25">FVL</span> plans to implement comprehensive Corporate Social Responsibility initiatives focused on medical welfare, education, infrastructure development, and cultural activities.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class = "cnthead reveal" id="cnt">
+          <h2>Contact <span style="color:#E21E25">Us</span></h2>
+        </div> 
+        <div class = "mailld reveal">
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+            <img src="images/Frame 9.png" width ="auto" height="50px">
+          </a>
+        </div>
+        <div class = "cntcard">
+          <div class = "crrd reveal">
+            <a href="https://maps.app.goo.gl/6Eh6GAePB5Drb16g8"><img src="images/Frame 10.png" width="400px" height="auto"></a>
+          </div>
+          <div class = "crrd reveal">
+            <a href="https://www.google.com/maps/search/472+C,+Kamarajar+Road,+Peelamedu+Post+Coimbatore-641004,+Tamil+Nadu,+India./@11.0210392,77.0200864,17z/data=!3m1!4b1?entry=ttu"><img src="images/Frame 11.png" width="400px" height="auto"></a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </p>
+      </section>
+
+      
+      <script type="text/javascript">
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+
+          for(var i = 0; i < reveals.length; i++){
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+            }
+          }
+        }
+      </script>
+  
+      
+      <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginRight = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginRight= "0";
+        }
+      </script>
+
+    </body>
+</html>
